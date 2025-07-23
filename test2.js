@@ -1,4 +1,2 @@
-function runUserCode(userInput) {
-  // This will trigger a CodeQL medium-severity alert for insecure use of eval
-  eval(userInput);
-}
+let userInput = "2 + 2";
+eval(userInput); // Triggers: js/eval-injection (Medium severity)
